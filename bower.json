@@ -1,0 +1,23 @@
+{
+  "name": "firebase-app-test",
+  "version": "0.0.0",
+  "authors": [
+    "Greg Van Buren <g.vanburen@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularfire": "~1.0.0",
+    "firebase": "~2.2.4"
+  }
+}

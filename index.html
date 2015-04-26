@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todoApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Firebase To Do App</title>
+	<link rel="stylesheet" href="todo.css">
+</head>
+<body ng-controller="toDoCtrl">
+	<h1>My List of To Dos:</h1>
+	<input type="text" ng-model="newTodo" ng-keydown="addTodo($event)" />
+	<ul id="myList">
+		<li id="item" ng-repeat="item in items" ng-mouseenter="show = true" ng-mouseleave="show = false">{{ item.name }} <button ng-show="show" ng-click="removeTodo($index)">Delete</button>
+		</li>
+	</ul>
+	
+	
+	<script src="./bower_components/angular/angular.js"></script>
+	<script src="./bower_components/firebase/firebase.js"></script>
+	<script src="./bower_components/angularfire/dist/angularfire.min.js"></script>
+	<script src="firetodo.js"></script>
+</body>
+</html>
