@@ -9,8 +9,8 @@
 	<button ng-click="logMeIn()">Log in</button>
 	<h1>My List of To Dos:</h1>
 	<input type="text" ng-model="newTodo" ng-keydown="addTodo($event)" />
-	<ul id="myList">
-		<li id="item" ng-cloak ng-repeat="item in items" ng-mouseenter="show = true" ng-mouseleave="show = false">{{ item.name }} <button ng-show="show" ng-click="removeTodo($index)">Delete</button>
+	<ul id="myList" ng-cloak>
+		<li id="item" ng-repeat="item in items" ng-mouseenter="show = true" ng-mouseleave="show = false">{{ item.name }} <button ng-show="show" ng-click="removeTodo($index)">Delete</button>
 		</li>
 	</ul>
 	
